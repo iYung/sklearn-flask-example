@@ -5,7 +5,7 @@ from flask import request
 app = flask.Flask(__name__)
 
 #loading my model
-model = pickle.load(open("model.pkl","r"))
+model = pickle.load(open("model.pkl","rb"))
 
 #defining a route for only post requests
 @app.route('/', methods=['POST'])
